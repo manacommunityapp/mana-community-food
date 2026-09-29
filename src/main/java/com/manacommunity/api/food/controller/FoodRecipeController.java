@@ -3,7 +3,7 @@ package com.manacommunity.api.food.controller;
 import com.manacommunity.api.food.model.FoodRecipe;
 import com.manacommunity.api.food.model.RecipeComment;
 import com.manacommunity.api.food.service.FoodRecipeService;
-import com.manacommunity.api.user.security.UserPrincipal;
+import com.manacommunity.common.user.security.UserPrincipal;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -49,3 +49,4 @@ public class FoodRecipeController {
         return ResponseEntity.ok(recipeService.addComment(recipeId, principal.getId(), text));
     }
 }
+

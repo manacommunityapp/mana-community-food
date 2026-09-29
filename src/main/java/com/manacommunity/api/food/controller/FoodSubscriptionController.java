@@ -3,7 +3,7 @@ package com.manacommunity.api.food.controller;
 import com.manacommunity.api.food.model.FoodSubscription;
 import com.manacommunity.api.food.model.SubscriptionPlan;
 import com.manacommunity.api.food.service.FoodSubscriptionService;
-import com.manacommunity.api.user.security.UserPrincipal;
+import com.manacommunity.common.user.security.UserPrincipal;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -62,3 +62,4 @@ public class FoodSubscriptionController {
         return ResponseEntity.ok(subscriptionService.updateSubscriptionStatus(id, "CANCELLED"));
     }
 }
+

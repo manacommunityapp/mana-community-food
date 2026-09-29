@@ -4,7 +4,7 @@ import com.manacommunity.api.food.model.FoodRestaurant;
 import com.manacommunity.api.food.model.MenuCategory;
 import com.manacommunity.api.food.model.MenuItem;
 import com.manacommunity.api.food.service.FoodRestaurantService;
-import com.manacommunity.api.user.security.UserPrincipal;
+import com.manacommunity.common.user.security.UserPrincipal;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -102,3 +102,4 @@ public class FoodRestaurantController {
         return ResponseEntity.ok(restaurantService.getCombos(restaurantId));
     }
 }
+

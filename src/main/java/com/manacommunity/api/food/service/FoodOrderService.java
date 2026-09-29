@@ -1,6 +1,6 @@
 package com.manacommunity.api.food.service;
 
-import com.manacommunity.api.exception.ResourceNotFoundException;
+import com.manacommunity.common.exception.ResourceNotFoundException;
 import com.manacommunity.api.food.model.FoodOrder;
 import com.manacommunity.api.food.repository.FoodOrderRepository;
 import lombok.RequiredArgsConstructor;
@@ -43,3 +43,4 @@ public class FoodOrderService {
         return orderRepository.save(order);
     }
 }
+

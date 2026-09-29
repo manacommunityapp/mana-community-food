@@ -1,6 +1,6 @@
 package com.manacommunity.api.food.service;
 
-import com.manacommunity.api.exception.ResourceNotFoundException;
+import com.manacommunity.common.exception.ResourceNotFoundException;
 import com.manacommunity.api.food.model.FoodRecipe;
 import com.manacommunity.api.food.model.RecipeComment;
 import com.manacommunity.api.food.repository.FoodRecipeRepository;
@@ -47,3 +47,4 @@ public class FoodRecipeService {
         return comment;
     }
 }
+

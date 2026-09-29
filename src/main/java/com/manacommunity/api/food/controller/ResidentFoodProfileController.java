@@ -2,7 +2,7 @@ package com.manacommunity.api.food.controller;
 
 import com.manacommunity.api.food.model.ResidentFoodProfile;
 import com.manacommunity.api.food.service.ResidentFoodProfileService;
-import com.manacommunity.api.user.security.UserPrincipal;
+import com.manacommunity.common.user.security.UserPrincipal;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -27,3 +27,4 @@ public class ResidentFoodProfileController {
         return ResponseEntity.ok(profileService.updateProfile(principal.getId(), profile));
     }
 }
+
