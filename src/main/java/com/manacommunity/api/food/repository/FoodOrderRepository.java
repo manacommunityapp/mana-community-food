@@ -12,4 +12,8 @@ import java.util.List;
 public interface FoodOrderRepository extends JpaRepository<FoodOrder, Long> {
     Page<FoodOrder> findByUserId(Long userId, Pageable pageable);
     List<FoodOrder> findByRestaurantId(Long restaurantId);
+    List<FoodOrder> findByRestaurantIdAndStatus(Long restaurantId, String status);
+    List<FoodOrder> findByRestaurantIdAndStatusIn(Long restaurantId, List<String> statuses);
+    java.util.Optional<FoodOrder> findByOrderNumber(String orderNumber);
+    Page<FoodOrder> findByCommunityIdAndStatus(Long communityId, String status, Pageable pageable);
 }
