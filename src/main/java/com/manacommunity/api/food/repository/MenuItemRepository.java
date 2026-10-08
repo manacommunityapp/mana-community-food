@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+@Repository("foodMenuItemRepository")
 public interface MenuItemRepository extends JpaRepository<MenuItem, Long> {
     Page<MenuItem> findByRestaurantId(Long restaurantId, Pageable pageable);
     Page<MenuItem> findByRestaurantIdAndCategoryId(Long restaurantId, Long categoryId, Pageable pageable);
